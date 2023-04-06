@@ -1,0 +1,19 @@
+디자인과 더불어 DB연동시 어떻게 해야할지
+
+바코드를 인식하여 출퇴근 기록 입력시 준비해야할것들
+
+바코드 생성? //시간관계상 힘들것;;
+
+달력 부분 DB
+
+- idx, yy, mm, dd, content(메모 내역)
+
+메인 DB
+- idx, name, jumin, gender, dname, rank, sal, id, pass,filename(이미지)
+
+출퇴근 기록 전용 DB? --->시간관계상 힘들것;;
+- idx, name, id, dname, rank, filename(사원 이미지), commute1,2(출퇴근)
+
+
+메인 DB jumin에서 생일자 추출하여 달력부분 DB의 mm, dd와 조인하여 
+달력페이지에서 해당 월,일 에 하이라이트 표시 및 "이름+생일" 출력
